@@ -25,6 +25,7 @@ Tech Stack
   
 Work experience
 ======
+
 LiDAR 4D Panoptic Segmentation
 ------
 * Internship in the department of emerging technology of Volvo CE *
