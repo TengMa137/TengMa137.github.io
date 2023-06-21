@@ -11,49 +11,63 @@ redirect_from:
 
 Education
 ======
-* B.S. in GitHub, GitHub University, 2012
-* M.S. in Jekyll, GitHub University, 2014
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
+* M.S. in Autonomous System, UNITN,IT / KTH,SE, 2020-2022
+* B.S. in Automation, Jilin University, CN, 2015-2019
 
+Area of Speciality
+======
+Robot Perception and State Estimation, Computer Vision, Machine Learning
+
+Tech Stack
+======
+* C/C++, Python, MATLAB
+* Docker, Git
+  
 Work experience
 ======
-* Summer 2015: Research Assistant
-  * Github University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
+LiDAR 4D Panoptic Segmentation
+------
+* Internship in the department of emerging technology of Volvo CE *
+* Built point cloud dataset for Volvo CE, including data collection, data denoising and data annotation.
+* Adopted the state-of-the-art model 4D-PLS to achieve 4D panoptic segmentation of point cloud data, the goal of which is to obtain the semantic meaning of each point and the ability to track moving objects in a sequence of point clouds simultaneously.
+* Optimized hyperparameters of the deep learning model using Bayesian Optimization with TPE surrogate model and improved the main model evaluation metric LSTQ from 93% to 94%.
+* Tools: Git, Pytorch, Python, Linux *
 
-* Fall 2015: Research Assistant
-  * Github University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
-  
-Skills
+Projects
 ======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
+Semantic Visual-inertia Odometry
+------
+* Combined YOLOv8 and orb-slam3 to obtain semantic instance-level motion information.
+* Estimated the state of objects with a focus on relative and absolute velocity.
+* Tools: Opencv, C++ * 
 
-Publications
-======
-  <ul>{% for post in site.publications %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
+Local Chatbot
+------
+* Built a web UI that run locally for a chatbot powered by llamacpp model using Streamlit.
+* Supported chat with humam, PDF file, Website page and more (continuously updating).
+* A chatgpt-like experience but with all the data stored locally and model running on a PC in a reasonable inference speed.
+* Tools: Langchain, Streamlit, Python * 
+
+GPS/IMU Localization
+------
+* Investigated the application of Kalman Filter in fusing IMU with other sensors.
+* Implemented error state Kalman Filter in Python to fuse IMU and GPS data. Sensor data was from the first sequence of odometry in Kitti dataset.
+* Tools: Python, Matlab * 
   
-Talks
-======
-  <ul>{% for post in site.talks %}
-    {% include archive-single-talk-cv.html %}
-  {% endfor %}</ul>
-  
-Teaching
-======
-  <ul>{% for post in site.teaching %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Service and leadership
-======
-* Currently signed in to 43 different slack teams
+Pedestrian Attribute Recognition & ReID
+------
+* Identified the individual in the query image set who was previously displayed in the training set by recognizing the attributes such as age, gender, color of wearing etc. Images and annotations were from Market-1501 dataset.
+* Modify a pretrained Resnet50 in Pytorch as the backbone, processed the annotation data and output the results in csv format using Pandas.
+* Tools: Pytorch, Pandas, Python *
+
+MBS Modeling and Simulation 
+------
+* Collaborated with teammates to build a model of a robot leg and conducted kinematic & dynamic analysis.
+* Validated the numerical solutions of Lagrange equations from Maple RK4 solver in Matlab.
+* Tools: Maple, Matlab, Simulink * 
+
+Point Cloud Registration
+------
+* Studied different handcraft descriptors in feature extraction such as ISS, SIFT3D, FPFH.
+* Estimated the transformation matrix of point clouds with RANSAC and ICP. The point cloud data was generated from Unity.
+* Tools: PCL, C++, Unity* 
