@@ -7,7 +7,7 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : "teng / Personal Website"
+title                    : "Teng / Personal Website"
 title_separator          : "-"
 name                     : &name "Your Name"
 description              : &description "personal description"
